@@ -176,9 +176,7 @@ function renderMenu() {
 
   return (
     <div className="native_scroller">
-      <header className="side_menu_header">
-        {renderHeader(user)}
-      </header>
+      {renderHeader(user)}
       {user && menu.headerOpen() ? renderProfileActions(user) : renderLinks(user)}
     </div>
   );
